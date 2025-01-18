@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ATAmor - Voluntarie-se</title>
+        <link rel="icon" type="image/x-icon" href="assets/imgs/portfolio.ico" />
+
+        <link rel="stylesheet" href="css/voluntario.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/header.css" />
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="navigation">
+                    <div class="logoTitle">
+                        <a href="index.html"
+                            ><img
+                                class="toplogo"
+                                src="assets/imgs/herói.gif"
+                                alt="logo"
+                        /></a>
+                        <a href="">CONECTANDO VOLUNTÁRIOS</a>
+                    </div>
+                    <div class="links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="doacoes.html">Doações</a></li>
+                        <li><a href="voluntario.html">Voluntarie-se</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <div class="volunteer">
+                <img src="./assets/imgs/vestido.png" alt="Imagem de exemplo" class="volunteer-img" />
+                <div class="info-container">
+                    <h2 class="title">Voluntarie-se</h2>
+                    <p class="inf">
+                        Você também pode se voluntariar e se tornar um dos personagens que levam 
+                        alegria e encantamento para as crianças! Se vestir de um dos nossos personagens 
+                        e compartilhar sorrisos é uma experiência gratificante que transforma vidas, 
+                        tanto a de quem recebe quanto a de quem doa o seu tempo. Para participar, 
+                        basta preencher a nossa planilha e se candidatar. Venha fazer parte dessa missão 
+                        mágica e ajude-nos a espalhar esperança e felicidade!
+                    </p>
+                </div>
+            </div>
+        
+            <!-- Formulário -->
+            <div class="form-container">
+                <form class="volunteer-form">
+                    <div class="form-group">
+                        <label for="full-name">Nome Completo</label>
+                        <input type="text" id="full-name" name="full-name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Idade</label>
+                        <input type="number" id="age" name="age" min="1" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Endereço</label>
+                        <input type="text" id="address" name="address" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="reason">Motivo do Voluntariado</label>
+                        <textarea id="reason" name="reason" maxlength="500" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar</button>
+                </form>
+            </div>
+        </div>
+        
+
+        <footer>
+            <div class="info-footer">
+                <p>
+                    Developed by
+                    <b
+                        ><a href="https://github.com/ussyckk" target="_blank"
+                            >Alexandre</a
+                        ></b
+                    >
+                    &
+                    <b
+                        ><a
+                            href="https://github.com/MarcusFabI0"
+                            target="_blank"
+                            >Marcus</a
+                        ></b
+                    >
+                </p>
+                <p><b>© </b> All rights reserved</p>
+            </div>
+        </footer>
+    </body>
+</html>
