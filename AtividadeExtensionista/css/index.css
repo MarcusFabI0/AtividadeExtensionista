@@ -1,48 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Sometype+Mono&display=swap');
 
-.container{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
     display: flex;
     flex-direction: column;
-    align-items:center;
-    justify-content: center;
-    height: 90vh;
-    background-color:rgb(239, 239, 239);
-    background-repeat:no-repeat;
-    background-size: 100% auto;
+    font-family: 'PT Sans', sans-serif;
+    background-color: rgb(239, 239, 239);
 }
 
-.infoContainer{
-display: flex;
-align-items: flex-start;
-gap: 32px;
-max-width: 95%;
-min-width: 95%
-}
-
-.infoCard {
-    overflow: hidden;
+.container {
     flex: 1;
     display: flex;
-    min-height: 200px;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     padding: 20px;
+    background-color: rgb(239, 239, 239);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.infoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    gap: 36px;
+    padding: 20px;
+    text-align: center;
+    gap: 15px;
 }
 
-.infoTitle{
-    font-family:'Roboto', monospace ;
-    font-size: 24px;
-    color: #000;
-}
-.description{
-    font-family: 'Roboto', monospace;
-    font-size: 16px;
-    color: #000;
+.card-1 img,
+.card-2 img,
+.card-3 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
+.cardInfo {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-1 p,
+.card-2 p,
+.card-3 p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 768px) {
+    .infoContainer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        max-width: 90%;
+    }
+}
