@@ -1,66 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contato</title>
+        <link rel="icon" type="image/x-icon" href="assets/imgs/portfolio.ico" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marcus Fabio - Contato</title>
-    <link rel="icon" type="image/x-icon" href="assets/imgs/portfolio.ico">
+        <link rel="stylesheet" href="css/contato.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/header.css" />
+    </head>
 
-    <link rel="stylesheet" href="css/contato.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/header.css" />
+    <body>
+        <header>
+            <nav>
+                <ul class="navigation">
+                    <div class="logoTitle">
+                        <a href="index.html"
+                            ><img
+                                class="toplogo"
+                                src="assets/imgs/herói.gif"
+                                alt="logo"
+                        /></a>
+                        <a href="">CONECTANDO VOLUNTÁRIOS</a>
+                    </div>
+                    <div class="links">
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="doacoes.html">Doações</a></li>
+                        <li><a href="voluntario.html">Voluntarie-se</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </header>
 
-</head>
-<body>
-    <!--Header com logo e 4 links, que mudam conforme a troca de página-->
-    <header>
-        <nav>
-            <ul class="navigation">
-                <a href="index.html"><img class="toplogo" src="assets/imgs/logo2.gif" alt="logo" /></a>
-                <div class="links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html">Portfólio</a></li>
-                    <li><a href="sobremim.html">Sobre mim</a></li>
-                    <li><a href="formacao.html">Formação</a></li>
+        <div class="container">
+            <div class="contact">
+                <div class="donation">
+                    <p>Contato: (11) 9999-9999</p>
+                    <p>Email: atamor@atamor.com.br</p>
+                    <p>Facebook: @atamor</p>
+                    <p>Chave Pix: atamordoacoes@atamor.com.br</p>
                 </div>
-            </ul>
-        </nav>
-    </header>
-        <!--Bloco contendo inputs de nome, email e mensagem, junto a um botão de enviar -->
-    <div class="container">
-        <section class="contact">
-            <div class="contact-form">
-                <h2>Entre em contato!</h2>
-                <form>
-                    <div class="input-container">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" placeholder="Seu nome">
-                    </div>
-                    <div class="input-container">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Seu email">
-                    </div>
-                    <div class="input-container">
-                        <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
-                    </div>
-                    <button type="submit">Enviar</button>
-                </form>
+                <div class="card">
+                    <img src="./assets/imgs/atamor.png" alt="">
+                </div>
             </div>
-        </section>
-    </div>
-    
-    <!-- Footer contendo apenas um "copyright" e um link que redireciona para meu Github -->
-    <footer>
-        <div class="info">
-            <p>
-                Developed by <b><a href="https://github.com/MarcusFabI0">Marcus Fabio</a></b>
-            </p>
-            <p>
-                <b>©</b>All rights reserved
-            </p>
+            <div class="info-container">
+                <p>
+                    Lembre-se: você pode ligar para nós a qualquer momento para obter informações sobre nossos pontos de coleta e entender melhor como funciona o nosso trabalho. Ficamos felizes em esclarecer todas as suas dúvidas e mostrar como você pode fazer parte dessa causa tão especial.
+                    A sua ajuda faz uma diferença enorme, contribuindo diretamente para a alegria e o conforto dos pacientes que tanto precisam. Muito obrigado pelo seu interesse e generosidade! Juntos, podemos trazer mais felicidade e esperança para aqueles que enfrentam essa jornada difícil. ❤️
+                </p>
+                <img src="./assets/imgs/heart.png"></img>
+            </div>
         </div>
-    </footer>
-</body>
+
+        <footer>
+            <div class="info-footer">
+                <p>
+                    Developed by
+                    <b
+                        ><a href="https://github.com/ussyckk" target="_blank"
+                            >Alexandre</a
+                        ></b
+                    >
+                    &
+                    <b
+                        ><a
+                            href="https://github.com/MarcusFabI0"
+                            target="_blank"
+                            >Marcus</a
+                        ></b
+                    >
+                </p>
+                <p><b>© </b> All rights reserved</p>
+            </div>
+        </footer>
+    </body>
 </html>
